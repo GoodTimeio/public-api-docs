@@ -1,4 +1,4 @@
-# ATS API Endpoints
+# Jobs API Endpoints
 
 * [Get Job](#get-jobs:jobId)
 * [Get Jobs](#get-jobs)
@@ -14,6 +14,11 @@ key|value
 ---|---
 `Authorization`| Token
 
+#### Path Params
+params | required | type | comment
+---|---|---|---
+jobId | true | String | ID of the job.
+
 
 #### Sample Response
 ```json
@@ -23,7 +28,7 @@ key|value
         "createdAt": "2016-11-20T04:49:20.660Z",
         "updatedAt": "2017-03-14T09:12:55.124Z",
         "closedAt": null,
-        "status": "active",
+        "status": "active", //active, inactive
         "name": "Regional Sales Manager",
         "offices": [
             {
@@ -105,6 +110,10 @@ params | required | type | comment
 ---|---|---|---
 maxResults | false | Integer | Max number of results to return. Default is 100
 offset | false | Integer | Offset of results. Default is 0
+createdAtMin | false | String ISO Time | Lower bound (inclusive) of the createdAt time.
+createdAtMax | false | String ISO Time | Upper bound (exclusive) of the createdAt time.
+updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedAt time.
+updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedAt time.
 
 #### Sample Response
 ```json
@@ -116,7 +125,7 @@ offset | false | Integer | Offset of results. Default is 0
             "id": "5567829a-193c-4f25-b3e3-ac42f896a1cd",
             "createdAt": "2016-11-20T04:49:20.660Z",
             "updatedAt": "2017-03-14T09:12:55.124Z",
-            "closedAt": null,
+            "closedAt": null, //active, inactive
             "status": "active",
             "name": "Regional Sales Manager",
             "offices": [
