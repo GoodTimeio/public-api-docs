@@ -1,6 +1,6 @@
 # Applications API Endpoints
 
-* [Get Application](#get-applications-appliationId)
+* [Get Application](#get-applicationsapplicationid)
 * [Get Applications](#get-applications)
 
 
