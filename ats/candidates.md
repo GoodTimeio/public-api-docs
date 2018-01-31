@@ -34,23 +34,23 @@ candidateId | true | String | ID of the candidate.
         "photoUrl": "https://www.photos.com/Vjs23j20fHfkdk",
         "phoneNumbers": [
             {
-                "isPrimary": true,
-                "type": "mobile",
+                "isPrimary": true, // only supports 1 primary numbe
+                "type": "mobile", // options: home, mobile, work, other
                 "phoneNumber": "5121112222",
                 "formattedNumber": "+1 (512) 111-2222",
-                "optInForContact": true,
+                "optInForContact": true,  // if the user has opted in to receive contact information on this phone
                 "optInTimeStamp": "2017-03-14T09:12:55.124Z",
-                "optInMeta": "Checkbox sign in flow via ATS Login"
+                "optInMeta": "Checkbox sign in flow via ATS Login" // an optional string field to pass in any additional opt in data
             }
         ],
-        "emails": [
+        "emails": [ // one or more candidate email addresses
             {
-                "isPrimary": true,
-                "type": "school",
+                "isPrimary": true, // only supports 1 primary email
+                "type": "school", // options: personal, school, work, other
                 "email": "ari@mit.edu",
-                "optInForContact": true,
+                "optInForContact": true, // if the user has opted in to receive contact information on this phone
                 "optInTimeStamp": "2017-03-14T09:12:55.124Z",
-                "optInMeta": "Checkbox sign in flow via ATS Login"
+                "optInMeta": "Checkbox sign in flow via ATS Login" // an optional string field to pass in any additional opt in data
             }
         ],
         "links": [
@@ -65,7 +65,7 @@ candidateId | true | String | ID of the candidate.
         ],
         "createdAt": "2017-03-14T09:12:55.124Z",
         "updatedAt": "2017-03-14T09:12:55.124Z",
-        "status": "active"
+        "status": "active" // we will stop syncing inactive candidates
     }
 }
 

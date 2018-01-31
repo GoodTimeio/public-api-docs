@@ -36,18 +36,16 @@ jobId | true | String | ID of the job.
                 "address": "1 California St. Ste 2800, San Francisco, CA 94105"
             }
         ],
-        "stages": [
+        "stages": [ // Should be in order
             {
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                "index": 0,
                 "name": "Recruiter Phone Screen",
-                "duration": 45,
-                "events": [
+                "events": [// one or more individual meetings with candidate
                     {
                         "id": "11efa444-7605-403f-88dd-062df484c172",
                         "name": "Recruiter Phone Screen",
                         "status": "active",
-                        "duration": 45,
+                        "duration": 45, // in minutes
                         "scorecard": {
                             "name": "Recruiter Feedback",
                             "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
@@ -55,13 +53,12 @@ jobId | true | String | ID of the job.
                     }
                 ],
                 "status": "active",
-                "type": "video",
+                "type": "video",  // optional
                 "createdAt": "2016-11-20T04:49:20.660Z",
                 "updatedAt": "2017-03-14T09:12:55.124Z"
             },
             {
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                "index": 0,
                 "name": "Recruiter Phone Screen",
                 "duration": 45,
                 "events": [
@@ -82,12 +79,12 @@ jobId | true | String | ID of the job.
                 "updatedAt": "2017-03-14T09:12:55.124Z"
             }
         ],
-        "jobAdmins": [],
-        "hiringManagers": [],
-        "interviewers": [],
-        "recruiters": [],
-        "coordinators": [],
-        "keywords": []
+        "jobAdmins": [], // list of user objects, optional
+        "hiringManagers": [], // list of user objects, optional
+        "interviewers": [], // list of user objects, optional
+        "recruiters": [], // list of user objects, optional
+        "coordinators": [], // list of user objects, optional
+        "keywords": [] // list of keywords or tags that pertain to this job, optional
     }
 }
 

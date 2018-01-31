@@ -25,9 +25,9 @@ applicationId | true | String | ID of the application.
 {
     "result": {
         "id": "5926cbe7-b413-416f-9939-1abb30b13421",
-        "candidateId": "39ca6979-70d5-472c-85b8-ac6b1a20f161",
-        "jobId": "5567829a-193c-4f25-b3e3-ac42f896a1cd",
-        "stageId": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
+        "candidateId": "39ca6979-70d5-472c-85b8-ac6b1a20f161", // the candidate
+        "jobId": "5567829a-193c-4f25-b3e3-ac42f896a1cd", // the job that this application is under
+        "stageId": "3722e88f-e4ba-44e7-a208-9a89c2d0c338", // the job stage the current application is in
         "createdAt": "2017-03-14T09:12:55.124Z",
         "updatedAt": "2017-03-14T09:12:55.124Z",
         "closedAt": null,
