@@ -1,9 +1,7 @@
 # Applications API Endpoints
 
-# Jobs API Endpoints
-
-* [Get Application](#get-applications:appliationId)
-* [Get Jobs](#get-jobs)
+* [Get Application](#get-applications-appliationId)
+* [Get Applications](#get-applications)
 
 
 ---
@@ -43,7 +41,7 @@ applicationId | true | String | ID of the application.
 ---
 
 
-### `GET` `/jobs`
+### `GET` `/applications`
 * Returns a list of applications from the ATS.
 
 ####  Header

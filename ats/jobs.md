@@ -1,6 +1,6 @@
 # Jobs API Endpoints
 
-* [Get Job](#get-jobs:jobId)
+* [Get Job](#get-jobs-jobId)
 * [Get Jobs](#get-jobs)
 
 
