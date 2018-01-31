@@ -7,12 +7,12 @@
 ---
 
 ### `GET` `/sample_get_endpoint`
-* Returns a list of ATS applications for a guest.
+* Endpoint Description
 
 ####  Header
 key|value
 ---|---
-`example`| value
+`Authorization`| Token
 
 #### GET Query
 params | required | type | comment
@@ -24,9 +24,7 @@ query | false | String | Search query
 #### Sample Response
 ```json
 {
-  "code": 200,
-  "status": "success",
-  "result": {}
+    "result": {}
 }
 ```
 
@@ -36,11 +34,12 @@ query | false | String | Search query
 
 
 ### `POST` `/sample_post_endpoint`
+* Endpoint Description
 
 ####  Header
 key|value
 ---|---
-`example`| value
+`Authorization`| Token
 
 
 #### POST Body
@@ -51,9 +50,7 @@ id | true | String UUID | ID of the object.
 #### Sample Response
 ```json
 {
-  "code": 200,
-  "status": "success",
-  "result": {}
+    "result": {}
 }
 ```
 
