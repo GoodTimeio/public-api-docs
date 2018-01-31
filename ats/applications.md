@@ -7,7 +7,7 @@
 ---
 
 ### `GET` `/applications/:applicationId`
-* Returns a job from the ATS.
+* Returns an application from the ATS.
 
 ####  Header
 key|value
@@ -21,7 +21,7 @@ applicationId | true | String | ID of the application.
 
 
 #### Sample Response
-```json
+```javascript
 {
     "result": {
         "id": "5926cbe7-b413-416f-9939-1abb30b13421",
@@ -60,7 +60,7 @@ updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedA
 updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedAt time.
 
 #### Sample Response
-```json
+```javascript
 {
     "size": 2,
     "totalSize": 2,
@@ -75,7 +75,7 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "closedAt": null,
             "status": "active"
         },
-        ...
+        //...
     ]
 }
 ```

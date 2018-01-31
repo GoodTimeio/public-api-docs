@@ -21,7 +21,7 @@ jobId | true | String | ID of the job.
 
 
 #### Sample Response
-```json
+```javascript
 {
     "result": {
         "id": "5567829a-193c-4f25-b3e3-ac42f896a1cd",
@@ -116,7 +116,7 @@ updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedA
 updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedAt time.
 
 #### Sample Response
-```json
+```javascript
 {
     "size": 2,
     "totalSize": 2,
@@ -187,7 +187,7 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "coordinators": [],
             "keywords": []
         },
-        ...
+        //...
     ]
 }
 ```
