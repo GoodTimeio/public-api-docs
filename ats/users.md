@@ -1,13 +1,13 @@
-# Candidates API Endpoints
+# Users API Endpoints
 
-* [Get Candidate](#get-candidatescandidateid)
-* [Get Candidates](#get-candidates)
+* [Get User](#get-usersuserid)
+* [Get Users](#get-users)
 
 
 ---
 
-### `GET` `/candidates/:candidateId`
-* Returns a candidate from the ATS.
+### `GET` `/users/:userId`
+* Returns a user from the ATS.
 
 ####  Header
 key|value
@@ -17,7 +17,7 @@ key|value
 #### Path Params
 params | required | type | comment
 ---|---|---|---
-candidateId | true | String | ID of the candidate.
+userId | true | String | ID of the user.
 
 
 #### Sample Response
@@ -25,12 +25,11 @@ candidateId | true | String | ID of the candidate.
 {
     "result": {
         "id": "2902c52a-d45b-4f0f-88f0-94351c07095f",
-        "givenName": "Ariel",
-        "familyName": "Peterson",
-        "nickname": "Ari",
-        "title": "Researcher",
-        "companY": "MIT",
-        "candidateUrl": "https://www.ats.com/candidates/2902c52a",
+        "givenName": "William",
+        "familyName": "Doe",
+        "nickname": "Bill",
+        "title": "Software Engineer",
+        "company": "Example Inc.",
         "photoUrl": "https://www.photos.com/Vjs23j20fHfkdk",
         "phoneNumbers": [
             {
@@ -43,12 +42,12 @@ candidateId | true | String | ID of the candidate.
                 "optInMeta": "Checkbox sign in flow via ATS Login" // an optional string field to pass in any additional opt in data
             }
         ],
-        "emails": [ // one or more candidate email addresses
+        "emails": [
             {
                 "isPrimary": true, // There should be only 1 primary
-                "type": "school", // options: personal, school, work, other
-                "email": "ari@mit.edu",
-                "optInForContact": true, // if the user has opted in to receive contact information on this phone
+                "type": "work", // options: personal, school, work, other
+                "email": "bill@example.com", // if the user has opted in to receive contact information on this phone
+                "optInForContact": true,
                 "optInTimeStamp": "2017-03-14T09:12:55.124Z",
                 "optInMeta": "Checkbox sign in flow via ATS Login" // an optional string field to pass in any additional opt in data
             }
@@ -56,16 +55,16 @@ candidateId | true | String | ID of the candidate.
         "links": [
             {
                 "type": "linkedin",
-                "value": "https://www.linkedin.com/in/ari"
+                "value": "https://www.linkedin.com/in/bill"
             },
             {
                 "type": "skype",
-                "value": "arip"
+                "value": "bill"
             }
         ],
         "createdAt": "2017-03-14T09:12:55.124Z",
         "updatedAt": "2017-03-14T09:12:55.124Z",
-        "status": "active" // we will stop syncing inactive candidates
+        "status": "active"
     }
 }
 
@@ -75,8 +74,8 @@ candidateId | true | String | ID of the candidate.
 ---
 
 
-### `GET` `/candidates`
-* Returns a list of candidates from the ATS.
+### `GET` `/users`
+* Returns a list of users from the ATS.
 
 ####  Header
 key|value
@@ -101,12 +100,11 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
     "result": [
         {
             "id": "2902c52a-d45b-4f0f-88f0-94351c07095f",
-            "givenName": "Ariel",
-            "familyName": "Peterson",
-            "nickname": "Ari",
-            "title": "Researcher",
-            "companY": "MIT",
-            "candidateUrl": "https://www.ats.com/candidates/2902c52a",
+            "givenName": "William",
+            "familyName": "Doe",
+            "nickname": "Bill",
+            "title": "Software Engineer",
+            "company": "Example Inc.",
             "photoUrl": "https://www.photos.com/Vjs23j20fHfkdk",
             "phoneNumbers": [
                 {
@@ -122,8 +120,8 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "emails": [
                 {
                     "isPrimary": true,
-                    "type": "school",
-                    "email": "ari@mit.edu",
+                    "type": "work",
+                    "email": "bill@example.com",
                     "optInForContact": true,
                     "optInTimeStamp": "2017-03-14T09:12:55.124Z",
                     "optInMeta": "Checkbox sign in flow via ATS Login"
@@ -132,11 +130,11 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "links": [
                 {
                     "type": "linkedin",
-                    "value": "https://www.linkedin.com/in/ari"
+                    "value": "https://www.linkedin.com/in/bill"
                 },
                 {
                     "type": "skype",
-                    "value": "arip"
+                    "value": "bill"
                 }
             ],
             "createdAt": "2017-03-14T09:12:55.124Z",
