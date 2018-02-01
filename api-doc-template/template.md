@@ -31,7 +31,7 @@ updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedA
 updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedAt time.
 
 #### Sample Response
-```json
+```javascript
 {
     "result": {}
 }
@@ -61,7 +61,7 @@ params | required | type | comment
 name | true | String | Name of the object
 
 #### Sample Response
-```json
+```javascript
 {
     "result": {}
 }
