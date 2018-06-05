@@ -6,7 +6,7 @@
 
 ---
 
-### `GET` `/applications/:applicationId`
+### `GET` `/candidates/:candidateId/applications/:applicationId`
 * Returns an application from the ATS.
 
 ####  Header
@@ -41,7 +41,7 @@ applicationId | true | String | ID of the application.
 ---
 
 
-### `GET` `/applications`
+### `GET` `/candidates/:candidateId/applications`
 * Returns a list of applications from the ATS.
 
 ####  Header

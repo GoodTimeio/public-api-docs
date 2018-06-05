@@ -201,7 +201,7 @@ key|value
 ---
 
 
-### `PATCH` `/interviews/:interviewId`
+### `PUT` `/interviews/:interviewId`
 * Update an interview on the ATS
 
 ####  Header
@@ -214,7 +214,7 @@ params | required | type | comment
 ---|---|---|---
 interviewId | true | String | ID of the interview.
 
-#### POST Body
+#### Body
 
 #### Sample Request
 ```javascript
