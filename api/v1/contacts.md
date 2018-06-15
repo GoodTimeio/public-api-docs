@@ -12,7 +12,7 @@
 ####  Header
 key|value
 ---|---
-`Authorization`| Token
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
 
 #### GET Query
 params | required | type | comment
@@ -35,8 +35,8 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "id": "7bc48d02-bbc2-4bdd-ae3e-c23b7479efd7",
             "givenName": "Geoff",
             "familyName": "Kyle",
-            "emails": [
-                "gkyle@goodtime.io",
+            "primaryEmail": "gkyle@goodtime.io",
+            "secondaryEmails": [
                 "geoff@goodtime.io"
             ],
             "notes": "This is a note example",
