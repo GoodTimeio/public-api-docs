@@ -36,7 +36,8 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
             "givenName": "Geoff",
             "familyName": "Kyle",
             "primaryEmail": "gkyle@goodtime.io",
-            "secondaryEmails": [
+            "emails": [
+                "gkyle@goodtime.io",
                 "geoff@goodtime.io"
             ],
             "notes": "This is a note example",
