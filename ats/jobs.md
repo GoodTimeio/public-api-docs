@@ -36,6 +36,12 @@ jobId | true | String | ID of the job.
                 "address": "1 California St. Ste 2800, San Francisco, CA 94105"
             }
         ],
+        "departments": [
+            {
+                "team": "Navy",
+                "department": "Military Department",
+            }
+        ],
         "stages": [ // Should be in order
             {
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
@@ -129,6 +135,12 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
                 {
                     "name": "San Francisco HQ",
                     "address": "1 California St. Ste 2800, San Francisco, CA 94105"
+                }
+            ],
+            "departments": [
+                {
+                    "team": "Navy",
+                    "department": "Military Department",
                 }
             ],
             "stages": [
