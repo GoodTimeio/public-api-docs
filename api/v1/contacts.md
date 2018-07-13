@@ -1,4 +1,5 @@
 # Contacts API Endpoints
+* Base Url `https://a.goodtime.io/api/v1`
 
 * [Get Contacts](#get-contacts)
 
