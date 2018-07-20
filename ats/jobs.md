@@ -92,6 +92,7 @@ jobId | true | String | ID of the job.
         "interviewers": [], // list of user objects, optional
         "recruiters": [], // list of user objects, optional
         "coordinators": [], // list of user objects, optional
+        "sourcers": [], // list of user objects, optional
         "keywords": [] // list of keywords or tags that pertain to this job, optional
     }
 }
