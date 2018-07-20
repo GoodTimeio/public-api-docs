@@ -32,12 +32,14 @@ jobId | true | String | ID of the job.
         "name": "Regional Sales Manager",
         "offices": [
             {
+                "id": "17670",
                 "name": "San Francisco HQ",
                 "address": "1 California St. Ste 2800, San Francisco, CA 94105"
             }
         ],
         "departments": [
             {
+                "id": "26115",
                 "team": "Navy",
                 "department": "Military Department",
             }
