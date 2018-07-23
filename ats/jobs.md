@@ -23,6 +23,10 @@ jobId | true | String | ID of the job.
 #### Sample Response
 ```javascript
 {
+    "pagination": {
+        next: 2,
+        maxResults: 100
+    },
     "result": {
         "id": "5567829a-193c-4f25-b3e3-ac42f896a1cd",
         "createdAt": "2016-11-20T04:49:20.660Z",
@@ -42,49 +46,6 @@ jobId | true | String | ID of the job.
                 "id": "26115",
                 "team": "Navy",
                 "department": "Military Department",
-            }
-        ],
-        "stages": [ // Should be in order
-            {
-                "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                "name": "Recruiter Phone Screen",
-                "events": [// one or more individual meetings with candidate
-                    {
-                        "id": "11efa444-7605-403f-88dd-062df484c172",
-                        "name": "Recruiter Phone Screen",
-                        "status": "active",
-                        "duration": 45, // in minutes
-                        "scorecard": {
-                            "name": "Recruiter Feedback",
-                            "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
-                        }
-                    }
-                ],
-                "status": "active",
-                "type": "video",  // optional
-                "createdAt": "2016-11-20T04:49:20.660Z",
-                "updatedAt": "2017-03-14T09:12:55.124Z"
-            },
-            {
-                "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                "name": "Recruiter Phone Screen",
-                "duration": 45,
-                "events": [
-                    {
-                        "id": "11efa444-7605-403f-88dd-062df484c172",
-                        "name": "Recruiter Phone Screen",
-                        "status": "active",
-                        "duration": 45,
-                        "scorecard": {
-                            "name": "Recruiter Feedback",
-                            "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
-                        }
-                    }
-                ],
-                "status": "active",
-                "type": "video",
-                "createdAt": "2016-11-20T04:49:20.660Z",
-                "updatedAt": "2017-03-14T09:12:55.124Z"
             }
         ],
         "jobAdmins": [], // list of user objects, optional
@@ -124,8 +85,10 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 #### Sample Response
 ```javascript
 {
-    "size": 2,
-    "totalSize": 2,
+    "pagination": {
+        next: 2,
+        maxResults: 100
+    },
     "result": [
         {
             "id": "5567829a-193c-4f25-b3e3-ac42f896a1cd",
@@ -144,52 +107,6 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
                 {
                     "team": "Navy",
                     "department": "Military Department",
-                }
-            ],
-            "stages": [
-                {
-                    "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                    "index": 0,
-                    "name": "Recruiter Phone Screen",
-                    "duration": 45,
-                    "events": [
-                        {
-                            "id": "11efa444-7605-403f-88dd-062df484c172",
-                            "name": "Recruiter Phone Screen",
-                            "status": "active",
-                            "duration": 45,
-                            "scorecard": {
-                                "name": "Recruiter Feedback",
-                                "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
-                            }
-                        }
-                    ],
-                    "status": "active",
-                    "type": "video",
-                    "createdAt": "2016-11-20T04:49:20.660Z",
-                    "updatedAt": "2017-03-14T09:12:55.124Z"
-                },
-                {
-                    "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
-                    "index": 0,
-                    "name": "Recruiter Phone Screen",
-                    "duration": 45,
-                    "events": [
-                        {
-                            "id": "11efa444-7605-403f-88dd-062df484c172",
-                            "name": "Recruiter Phone Screen",
-                            "status": "active",
-                            "duration": 45,
-                            "scorecard": {
-                                "name": "Recruiter Feedback",
-                                "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
-                            }
-                        }
-                    ],
-                    "status": "active",
-                    "type": "video",
-                    "createdAt": "2016-11-20T04:49:20.660Z",
-                    "updatedAt": "2017-03-14T09:12:55.124Z"
                 }
             ],
             "jobAdmins": [],
