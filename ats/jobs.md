@@ -207,3 +207,74 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 
 
 ---
+### `GET` `/jobs/:jobId/stages`
+* Returns a stages for a job from the ATS. (For some ATS, stages are job agnotstic).
+
+####  Header
+key|value
+---|---
+`Authorization`| Token
+
+#### Path Params
+params | required | type | comment
+---|---|---|---
+jobId | true | String | ID of the job.
+
+
+#### Sample Response
+```javascript
+{
+    "pagination": {
+        next: 2,
+        maxResults: 100
+    },
+    "result": [ // Should be in order
+            {
+                "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
+                "name": "Recruiter Phone Screen",
+                "events": [// one or more individual meetings with candidate
+                    {
+                        "id": "11efa444-7605-403f-88dd-062df484c172",
+                        "name": "Recruiter Phone Screen",
+                        "status": "active",
+                        "duration": 45, // in minutes
+                        "scorecard": {
+                            "name": "Recruiter Feedback",
+                            "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
+                        }
+                    }
+                ],
+                "status": "active",
+                "type": "video",  // optional
+                "createdAt": "2016-11-20T04:49:20.660Z",
+                "updatedAt": "2017-03-14T09:12:55.124Z"
+            },
+            {
+                "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
+                "name": "Recruiter Phone Screen",
+                "duration": 45,
+                "events": [
+                    {
+                        "id": "11efa444-7605-403f-88dd-062df484c172",
+                        "name": "Recruiter Phone Screen",
+                        "status": "active",
+                        "duration": 45,
+                        "scorecard": {
+                            "name": "Recruiter Feedback",
+                            "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
+                        }
+                    }
+                ],
+                "status": "active",
+                "type": "video",
+                "createdAt": "2016-11-20T04:49:20.660Z",
+                "updatedAt": "2017-03-14T09:12:55.124Z"
+            }
+        ]
+    }
+}
+
+```
+
+
+---
