@@ -149,7 +149,7 @@ jobId | true | String | ID of the job.
             {
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
                 "name": "Recruiter Phone Screen",
-                "events": [// one or more individual meetings with candidate
+                "interviewSteps": [// one or more individual meetings with candidate
                     {
                         "id": "11efa444-7605-403f-88dd-062df484c172",
                         "name": "Recruiter Phone Screen",
@@ -170,7 +170,7 @@ jobId | true | String | ID of the job.
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
                 "name": "Recruiter Phone Screen",
                 "duration": 45,
-                "events": [
+                "interviewSteps": [
                     {
                         "id": "11efa444-7605-403f-88dd-062df484c172",
                         "name": "Recruiter Phone Screen",
