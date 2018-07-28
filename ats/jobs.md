@@ -155,6 +155,8 @@ jobId | true | String | ID of the job.
                         "name": "Recruiter Phone Screen",
                         "status": "active",
                         "duration": 45, // in minutes
+                        "groupId": "47fadbdb-b173-46dd-a388-54fe911cbec9",
+                        "groupName": "Engineering",
                         "scorecard": {
                             "name": "Recruiter Feedback",
                             "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
@@ -169,13 +171,14 @@ jobId | true | String | ID of the job.
             {
                 "id": "3722e88f-e4ba-44e7-a208-9a89c2d0c338",
                 "name": "Recruiter Phone Screen",
-                "duration": 45,
                 "interviewSteps": [
                     {
                         "id": "11efa444-7605-403f-88dd-062df484c172",
                         "name": "Recruiter Phone Screen",
                         "status": "active",
                         "duration": 45,
+                        "groupId": "47fadbdb-b173-46dd-a388-54fe911cbec9",
+                        "groupName": "Engineering",
                         "scorecard": {
                             "name": "Recruiter Feedback",
                             "url": "https://www.ats.com/feedback/scorecards?id=11efa444-7605-403f-88dd-062df484c172"
