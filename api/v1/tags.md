@@ -20,8 +20,9 @@ params | required | type | comment
 ---|---|---|---
 maxResults | false | Integer | Max number of results to return. Default is 100
 offset | false | Integer | Offset of results. Default is 0
-active | false | Boolean | Active tags if true, archived tags if false, all if undefined
-typeID | false | UUID | ID of the tag type
+status | false | String | 'active' or 'archived'
+typeId | false | UUID | ID of the tag type
+query | false | string | Search by tag name
 createdAtMin | false | String ISO Time | Lower bound (inclusive) of the createdAt time.
 createdAtMax | false | String ISO Time | Upper bound (exclusive) of the createdAt time.
 updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedAt time.
@@ -37,7 +38,8 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
         {
             "id": "f53eb296-4451-4495-8c08-0486a0a157af",
             "name": "iOS",
-            "type": "Skill",
+            "typeId": "ea7260f7-1612-4e99-a8ca-fb9abae09aac",
+            "typeName": "Skills",
             "status": "active",
         }
     ]
