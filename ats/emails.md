@@ -20,7 +20,7 @@ key|value
 ```javascript
 {
     {
-        "user_id": "6daad971-a949-49ab-b5ad-f475b09e17d3",
+        "userId": "6daad971-a949-49ab-b5ad-f475b09e17d3",
         "to": "candidate@example.com",
         "from": "recruiter@example.com",
         "cc": ["manager@example.com"],
