@@ -93,6 +93,8 @@ createdAtMin | false | String ISO Time | Lower bound (inclusive) of the createdA
 createdAtMax | false | String ISO Time | Upper bound (exclusive) of the createdAt time.
 updatedAtMin | false | String ISO Time | Lower bound (inclusive) of the updatedAt time.
 updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedAt time.
+jobId | false | String ID | Filter candidates by job
+stageId | false | String ID | Filter candidates by stage
 
 #### Sample Response
 ```javascript
