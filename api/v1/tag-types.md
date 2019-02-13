@@ -2,9 +2,9 @@
 * Base Url `https://a.goodtime.io/api/v1`
 
 * [Get Tag Types](#get-tag-types)
-* [Get a single Tag Type](#get-tag-types-tagtypeid)
-* [Update a Tag Type](#patch-tag-types-tagtypeid)
-* [Archive a Tag Type](#delete-tag-types-tagtypeid)
+* [Get a single Tag Type](#get-tag-typestagtypeid)
+* [Update a Tag Type](#patch-tag-typestagtypeid)
+* [Archive a Tag Type](#delete-tag-typestagtypeid)
 
 
 ---

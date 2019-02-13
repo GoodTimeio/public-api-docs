@@ -2,7 +2,7 @@
 * Base Url `https://a.goodtime.io/api/v1`
 
 * [Get Tags](#get-tags)
-* [Get Tags filtered by type](#get-tag-types-tagTypeId-tags)
+* [Get Tags filtered by type](#get-tag-typestagtypeidtags)
 * [Patch Tags](#patch-tags)
 
 ---
