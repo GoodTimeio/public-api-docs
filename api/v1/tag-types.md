@@ -114,6 +114,40 @@ key|value
 
 
 
+### `POST` `/tag-types`
+* Create a tag type
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Request
+```javascript
+{
+    "name": "Tag type name",
+}
+```
+
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "result": {
+        "id": "f53eb296-4451-4495-8c08-0486a0a157af",
+        "name": "Tag type name",
+        "status": "active",
+    }
+}
+```
+
+
+
+---
+
+
+
 ### `DELETE` `/tag-types/:tagTypeId`
 * Archive a tag type
 
