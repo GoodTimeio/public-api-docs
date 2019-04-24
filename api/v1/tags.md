@@ -93,7 +93,7 @@ key|value
 {
     "name": "iOS",
     "typeId": "ea7260f7-1612-4e99-a8ca-fb9abae09aac",
-]
+}
 ```
 
 #### Sample Response
@@ -129,7 +129,7 @@ key|value
 {
     "name": "iOS without a type",
     "typeId": null,
-]
+}
 ```
 
 #### Sample Response
