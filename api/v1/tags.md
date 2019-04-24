@@ -52,6 +52,131 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 
 
 
+### `GET` `/tags/:tagId`
+* Returns a tag filtered by `:tagId`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "result": {
+        "id": "f53eb296-4451-4495-8c08-0486a0a157af",
+        "name": "iOS",
+        "typeId": "ea7260f7-1612-4e99-a8ca-fb9abae09aac",
+        "typeName": "Skills",
+        "status": "active",
+    }
+}
+```
+
+
+
+---
+
+
+
+### `POST` `/tags`
+* Create a tag.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Request
+```javascript
+{
+    "name": "iOS",
+    "typeId": "ea7260f7-1612-4e99-a8ca-fb9abae09aac",
+]
+```
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "result": {
+        "id": "f53eb296-4451-4495-8c08-0486a0a157af",
+        "name": "iOS",
+        "typeId": "ea7260f7-1612-4e99-a8ca-fb9abae09aac",
+        "typeName": "Skills",
+        "status": "active",
+    }
+}
+```
+
+
+
+---
+
+
+
+### `PATCH` `/tags/:tagId`
+* Update a tag by `tagId`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Request
+```javascript
+{
+    "name": "iOS without a type",
+    "typeId": null,
+]
+```
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "result": {
+        "id": "f53eb296-4451-4495-8c08-0486a0a157af",
+        "name": "iOS without a type",
+        "typeId": null,
+        "status": "active",
+    }
+}
+```
+
+
+
+---
+
+
+
+### `DELETE` `/tags/:tagId`
+* Delete a tag by `tagId`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "result": {
+        "id": "f53eb296-4451-4495-8c08-0486a0a157af",
+        "name": "iOS",
+        "status": "archived",
+    }
+}
+```
+
+
+
+---
+
+
+
 ### `GET` `/tag-types/:tagTypeId/tags`
 * Returns a list of tags from GoodTime filtered by `:tagTypeId`.
 
