@@ -49,6 +49,7 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 key|value
 ---|---
 `Authorization`| Token
+`Content-Type`| `application/json`
 
 #### Path Params
 params | required | type | comment

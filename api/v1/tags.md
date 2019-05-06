@@ -87,6 +87,7 @@ key|value
 key|value
 ---|---
 `Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Content-Type`| `application/json`
 
 #### Sample Request
 ```javascript
@@ -123,6 +124,7 @@ key|value
 key|value
 ---|---
 `Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Content-Type`| `application/json`
 
 #### Sample Request
 ```javascript
@@ -228,6 +230,7 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 key|value
 ---|---
 `Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Content-Type`| `application/json`
 
 #### Sample Request
 ```javascript

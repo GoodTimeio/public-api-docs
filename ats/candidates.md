@@ -164,6 +164,7 @@ stageId | false | String ID | Filter candidates by stage
 key|value
 ---|---
 `Authorization`| Token
+`Content-Type`| `application/json`
 
 #### Path Params
 params | required | type | comment
