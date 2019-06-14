@@ -158,13 +158,21 @@ key|value
 ---|---
 `Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
 
+#### Sample Request
+```javascript
+{
+    "name": "Old tag type name",
+}
+```
+
+
 #### Sample Response
 ```javascript
 {
     "status": "success",
     "result": {
         "id": "f53eb296-4451-4495-8c08-0486a0a157af",
-        "name": "Tag Type Name",
+        "name": "Old tag Type name",
         "status": "archived",
     }
 }
