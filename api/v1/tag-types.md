@@ -128,6 +128,7 @@ key|value
 ```javascript
 {
     "name": "Tag type name",
+    "status": "archived" // the status field is optional. if it is not passed in the body, the default status is "active"
 }
 ```
 
@@ -139,7 +140,7 @@ key|value
     "result": {
         "id": "f53eb296-4451-4495-8c08-0486a0a157af",
         "name": "Tag type name",
-        "status": "active",
+        "status": "archived",
     }
 }
 ```
