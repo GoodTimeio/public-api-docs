@@ -161,9 +161,7 @@ key|value
 
 #### Sample Request
 ```javascript
-{
-    "name": "Old tag type name",
-}
+// no body needed
 ```
 
 
