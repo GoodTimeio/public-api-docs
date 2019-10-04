@@ -62,3 +62,117 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 
 
 ---
+
+
+
+
+### `GET` `/contacts/:id/tags`
+* Returns a list of tags associated to the contact by `:id`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "requestId": "jLIpDB",
+    "result": [
+        {
+            "id": "1b697008-502f-42bd-836c-ca0813ea4290",
+            "name": "SF",
+            "typeId": "21ea6b07-7fff-452b-ab05-4734505d8eaf",
+            "status": "active"
+        },
+        {
+            "id": "3c83269d-5f37-4607-85af-6cf0c33a284d",
+            "name": "Engineering",
+            "typeId": "56fe0869-c029-4f16-a71f-25fea308ad05",
+            "status": "active"
+        }
+    ]
+}
+```
+
+
+
+---
+
+
+
+
+### `PUT` `/contacts/:id/tags`
+* Returns a list of UserToTag objects after adding a list of tags to the contact by `:id`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Request
+```javascript
+[
+    {
+        "id": "1b697008-502f-42bd-836c-ca0813ea4290",
+        "name": "SF",
+        "typeId": "21ea6b07-7fff-452b-ab05-4734505d8eaf",
+        "status": "active"
+    },
+    {
+        "id": "3c83269d-5f37-4607-85af-6cf0c33a284d",
+        "name": "Engineering",
+        "typeId": "56fe0869-c029-4f16-a71f-25fea308ad05",
+        "status": "active"
+    }
+]
+```
+
+#### Sample Response
+```javascript
+{
+    "0": {
+        "createdAt": "2019-10-04T18:57:52.742Z",
+        "updatedAt": "2019-10-04T18:57:52.742Z",
+        "TagId": "1b697008-502f-42bd-836c-ca0813ea4290",
+        "UserId": "02b6bb8f-ccd8-4665-9409-9cbcca78de15"
+    },
+    "1": {
+        "createdAt": "2019-10-04T18:57:52.742Z",
+        "updatedAt": "2019-10-04T18:57:52.742Z",
+        "TagId": "3c83269d-5f37-4607-85af-6cf0c33a284d",
+        "UserId": "02b6bb8f-ccd8-4665-9409-9cbcca78de15"
+    },
+    "status": "success",
+    "requestId": "gAHf2q"
+}
+```
+
+
+
+---
+
+
+
+
+
+### `Delete` `/contacts/:id/tags/:tagId`
+* Removes a tag from a contact and returns a 1 for the removed tag
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "requestId": "gzNjgO"
+}
+```
+
+
+
+---
