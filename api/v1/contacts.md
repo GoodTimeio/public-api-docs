@@ -158,7 +158,7 @@ key|value
 
 
 ### `Delete` `/contacts/:id/tags/:tagId`
-* Removes a tag from a contact and returns a 1 for the removed tag
+* Removes a tag from a contact and returns a success for the removed tag
 
 ####  Header
 key|value
