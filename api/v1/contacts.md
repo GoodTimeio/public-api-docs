@@ -115,37 +115,30 @@ key|value
 ```javascript
 [
     {
-        "id": "1b697008-502f-42bd-836c-ca0813ea4290",
-    },
-    {
         "id": "3c83269d-5f37-4607-85af-6cf0c33a284d",
     }
+    {
+        "id": "1b697008-502f-42bd-836c-ca0813ea4291",
+    },
 ]
 ```
 
 #### Sample Response
 ```javascript
 {
-    "result": [
-        "1b697008-502f-42bd-836c-ca0813ea4290",
-        "3c83269d-5f37-4607-85af-6cf0c33a284d"
-    ],
     "status": "success",
-    "requestId": "gAHf2q"
+    "requestId": "WrfuyI",
+    "result": [
+        {
+            "id": "3c83269d-5f37-4607-85af-6cf0c33a284d"
+        }
+    ],
+    "invalidTagIds": [
+        {
+            "id": "1b697008-502f-42bd-836c-ca0813ea4291"
+        }
+    ]
 }
-```
-
-#### Sample Error Response
-
-```javascript
-{
-    "status": "error",
-    "code": 400,
-    "requestId": "ML8026",
-    "gtErrorCode": 40018,
-    "gtErrorName": "TAG_NOT_FOUND"
-}
-```
 
 
 
