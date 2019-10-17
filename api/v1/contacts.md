@@ -62,3 +62,108 @@ updatedAtMax | false | String ISO Time | Upper bound (exclusive) of the updatedA
 
 
 ---
+
+
+
+
+### `GET` `/contacts/:id/tags`
+* Returns a list of tags associated to the contact by `:id`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "requestId": "jLIpDB",
+    "result": [
+        {
+            "id": "1b697008-502f-42bd-836c-ca0813ea4290",
+            "name": "SF",
+            "typeId": "21ea6b07-7fff-452b-ab05-4734505d8eaf",
+            "status": "active"
+        },
+        {
+            "id": "3c83269d-5f37-4607-85af-6cf0c33a284d",
+            "name": "Engineering",
+            "typeId": "56fe0869-c029-4f16-a71f-25fea308ad05",
+            "status": "active"
+        }
+    ]
+}
+```
+
+
+
+---
+
+
+
+
+### `PUT` `/contacts/:id/tags`
+* Returns a list of tag ids that were added to the contact by `:id`.
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Request
+```javascript
+[
+    {
+        "id": "3c83269d-5f37-4607-85af-6cf0c33a284d",
+    }
+    {
+        "id": "1b697008-502f-42bd-836c-ca0813ea4291",
+    },
+]
+```
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "requestId": "WrfuyI",
+    "result": [
+        {
+            "id": "3c83269d-5f37-4607-85af-6cf0c33a284d"
+        }
+    ],
+    "invalidTagIds": [
+        {
+            "id": "1b697008-502f-42bd-836c-ca0813ea4291"
+        }
+    ]
+}
+
+
+
+---
+
+
+
+
+
+### `Delete` `/contacts/:id/tags/:tagId`
+* Removes a tag from a contact and returns a success for the removed tag 
+
+####  Header
+key|value
+---|---
+`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+
+#### Sample Response
+```javascript
+{
+    "status": "success",
+    "requestId": "gzNjgO"
+}
+```
+
+
+
+---
