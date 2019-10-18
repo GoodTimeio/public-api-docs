@@ -3,6 +3,7 @@
 
 * [Get Tag Types](#get-tag-types)
 * [Get a single Tag Type](#get-tag-typestagtypeid)
+* [Create a Tag Type](#post-tag-types)
 * [Update a Tag Type](#patch-tag-typestagtypeid)
 * [Archive a Tag Type](#delete-tag-typestagtypeid)
 

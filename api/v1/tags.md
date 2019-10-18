@@ -2,8 +2,12 @@
 * Base Url `https://a.goodtime.io/api/v1`
 
 * [Get Tags](#get-tags)
+* [Get a single Tag](#get-tagstagid)
+* [Create a Tag](#post-tags)
+* [Update a single Tag](#patch-tagstagid)
+* [Update multiple Tags](#patch-tags)
+* [Archive a Tag](#delete-tagstagid)
 * [Get Tags filtered by type](#get-tag-typestagtypeidtags)
-* [Patch Tags](#patch-tags)
 
 ---
 
