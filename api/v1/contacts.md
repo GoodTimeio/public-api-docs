@@ -3,7 +3,6 @@
 
 * [Get Contacts](#get-contacts)
 
-
 ---
 
 
@@ -148,7 +147,7 @@ key|value
 
 
 
-### `Delete` `/contacts/:id/tags/:tagId`
+### `DELETE` `/contacts/:id/tags/:tagId`
 * Removes a tag from a contact and returns a success for the removed tag 
 
 ####  Header
