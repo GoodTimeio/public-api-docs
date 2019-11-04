@@ -2,7 +2,9 @@
 * Base Url `https://a.goodtime.io/api/v1`
 
 * [Get Contacts](#get-contacts)
-
+* [Get Contact Tags](#get-contactsidtags)
+* [Add Contact Tags](#put-contactsidtags)
+* [Remove Contact Tag](#delete-contactsidtagstagid)
 
 ---
 
@@ -148,7 +150,7 @@ key|value
 
 
 
-### `Delete` `/contacts/:id/tags/:tagId`
+### `DELETE` `/contacts/:id/tags/:tagId`
 * Removes a tag from a contact and returns a success for the removed tag 
 
 ####  Header
