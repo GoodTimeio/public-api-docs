@@ -112,6 +112,7 @@ key|value
 key|value
 ---|---
 `Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Content-Type` | `application/json`
 
 #### Sample Request
 ```javascript
