@@ -106,7 +106,7 @@ key|value
 
 
 ### `PUT` `/contacts/:id/tags`
-* Returns a list of tag ids that were added to the contact by `:id`.
+* Adds tags to a contact
 
 ####  Header
 key|value
