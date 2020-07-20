@@ -248,7 +248,7 @@ key|value
 
 
 
-### `DELETE` `/interviews/:id`
+### `DELETE` `/interviews/:interviewId`
 * Deletes an interview from the CCS
 
 ####  Header
