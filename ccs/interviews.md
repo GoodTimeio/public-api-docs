@@ -185,7 +185,7 @@ key|value
 
 
 
-### `PUT` `/interviews/:id`
+### `PUT` `/interviews/:interviewId`
 * Updates an interview on the CCS
 
 ####  Header
