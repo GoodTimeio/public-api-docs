@@ -8,7 +8,7 @@
 
 ---
 
-### `GET` `/interviews/:id`
+### `GET` `/interviews/:interviewId`
 * Returns an interview from the CCS.
 
 ####  Header
