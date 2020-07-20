@@ -191,7 +191,7 @@ key|value
 ####  Header
 key|value
 ---|---
-`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Authorization`| Token
 `Content-Type` | `application/json`
 
 #### Sample Request
@@ -254,7 +254,7 @@ key|value
 ####  Header
 key|value
 ---|---
-`Authorization`| Basic authorization (`Basic ` + base64(`api key` + `:`))
+`Authorization`| Token
 
 #### Sample Response
 ```javascript
